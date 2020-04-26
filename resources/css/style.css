@@ -21,6 +21,15 @@ html {
     
 }
 
+.clearfix {zoom: 1}
+.clearfix: after {
+    content: '.';
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    display:block;
+}
+    
 
 /* ------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -87,17 +96,24 @@ h2:after {
 
 /* --------Meals -------- */
 
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+
+
+/* --------Meals -------- */
+
 .section-meals {
     padding:0;
-    margin:0;
+  
    
 }
 .meals-showcase {
     list-style:none;
     width:100%;
-    margin-top: 50px;
-    float: left;
-   
+
    
 }
 
@@ -106,6 +122,7 @@ h2:after {
     float: left;
     width: 25%;
     overflow:hidden;
+    background-color: #000;
     
 }
 
@@ -114,36 +131,130 @@ h2:after {
     margin:0;
     overflow:hidden;
     transform:none;
+    background-color: #000;
 }
 
 .meal-photo img {
+    opacity: 0.7;
     width:100%;
     height:auto;
     transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 .meal-photo img:hover {
-    transform: scale(1.00);
+    opacity: 1.00;
+    transform: scale(1.03);
+}
+
+
+ /* --------How It Works -------- */
+ 
+.section-steps {
+    background-color: #f4f4f4
+    
+}
+    
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+    
+}
+
+.works-step: last-of-type{
+    margin-bottom: 80px;
+    
+}
+
+.works-step div {
+    color:#e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius:50%;
+    height: 50px;
+    width: 50px;
+    text-align:center;
+    padding:  5px;
+    float: left;
+    font-size:  150%;
+    margin-right: 25px;
+}
+.btn-app {
+    border: transparent;
+}
+.btn-app img{
+    height: 50px;
+    width:auto;
+    margin-right: 10px;
 }
 
 
 
-   
+/* -------- City Features -------- */
 
-
- 
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
     
+}
+
+.city-feature {
+    margin-bottom: 5px;   
     
-    
-   
-    
+}
+
+
+/* -------- TESTIMONIALS -------- */
+
+.section-testimonials {
+    background-image: url(img/)
 
 
 
 
 
+
+
+}
+
+
+
+
+
+/* -------- Links -------- */
+a:link,
+a:visited {
+    color:#e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom; 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
     
-    
+}
+
+
+
 
 
 
@@ -169,6 +280,18 @@ h2:after {
     color:#e67e22;
     margin-bottom: 10px;
     
+}
+
+.icon-small {
+    display:inline-block;
+    width: 30px;
+    text-align: center;
+    color:#e67e22;
+    font-size 120%;
+    line-height: 120%;
+    vertical-align:middle;
+    margin-top: -5px;
+    margin-right: 10px;
 }
 
 
